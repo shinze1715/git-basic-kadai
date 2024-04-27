@@ -1,0 +1,44 @@
+PS C:\Users\srtoj> cd C:\Users\srtoj
+PS C:\Users\srtoj> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\srtoj
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/04/27     21:32                git_challenge
+
+
+PS C:\Users\srtoj> cd git_challenge
+PS C:\Users\srtoj\git_challenge> git init
+Initialized empty Git repository in C:/Users/srtoj/git_challenge/.git/
+PS C:\Users\srtoj\git_challenge> echo "Hello, World!" >> hello_world.txt
+PS C:\Users\srtoj\git_challenge> git add hello_world.txt
+PS C:\Users\srtoj\git_challenge> git commit -m "ファイル追加"
+[main (root-commit) 6aad823] 繝輔ぃ繧､繝ｫ霑ｽ蜉
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\srtoj\git_challenge> echo "こんにちは、世界！"　>> hello_world.txt
+PS C:\Users\srtoj\git_challenge> git add hello_world.txt
+PS C:\Users\srtoj\git_challenge> git commit -m "日本語訳を追記"
+[main a2ed872] 譌･譛ｬ隱櫁ｨｳ繧定ｿｽ險
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\srtoj\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\srtoj\git_challenge> git log
+commit a2ed872f1d2e187fea29c1eaf39c3a7686180456 (HEAD -> main)
+Author: shinze1715 <shinze1715@gmail.com>
+Date:   Sat Apr 27 22:10:32 2024 +0900
+
+    日本語訳を追記
+
+commit 6aad823725558a370efbe44bd25f37bc8010a0a1
+Author: shinze1715 <shinze1715@gmail.com>
+Date:   Sat Apr 27 21:41:40 2024 +0900
+
+    ファイル追加
+PS C:\Users\srtoj\git_challenge> git log --oneline
+a2ed872 (HEAD -> main) 日本語訳を追記
+6aad823 ファイル追加
